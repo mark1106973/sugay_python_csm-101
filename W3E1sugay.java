@@ -21,7 +21,7 @@ public class W3E1sugay {
 			
 			case 1:
 				try {
-					FileWriter fw = new FileWriter("students.txt", true);
+					FileWriter fw = new FileWriter("Mark.txt", true);
 					
 					System.out.print("Student Number: ");
 					String number = sc.nextLine();
@@ -32,7 +32,7 @@ public class W3E1sugay {
 					System.out.print("First Name: ");
 					String first = sc.nextLine();
 					
-					fw.write(number + ", " + last + ", " + first + "");
+					fw.write(number + ", " + last + ", " + first + "\n");
 					fw.close();
 					
 					System.out.println("Record saved!");
@@ -43,7 +43,7 @@ public class W3E1sugay {
 				
 			case 2: 
 				try {
-					FileReader fr = new FileReader("students.txt");
+					FileReader fr = new FileReader("Mark.txt");
 					int ch;
 					
 					System.out.println("\n--- STUDENT RECORDS ---");
